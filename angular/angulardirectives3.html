@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<!-- 
+AngularJS'in ng-repeat Directive'ini içeren bir örneğimiz. 
+Burada nesneler(Object) kullanıldı.
+-->
+<div ng-app="" ng-init="isimler=[
+{adi:'Alper',sehir:'Eskişehir'},
+{adi:'Sedat',sehir:'İzmir'},
+{adi:'Kerem',sehir:'Erzurum'}]">
+
+<p>Nesneler(objects) ile yapılan döngü:</p>
+<ul>
+  <li ng-repeat="x in isimler">
+  {{ x.adi + ', ' + x.sehir }}</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="myApp">
+<!-- 
+restriction'ları içeren Directive'ler örneği.
+-->
+<deneme-directive></deneme-directive>
+
+<div deneme-directive></div>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("denemeDirective", function() {
+    return {
+        restrict : "A",
+        template : "<h1>Burası Directive ile çalıştırıldı!</h1>"
+    };
+});
+</script>
+
+<!-- <p><strong>Not:</strong> By setting the <strong>restrict</strong> property to "A", only the HTML element with the "w3-test-directive" attribute has invoked the directive.</p> -->
+
+<p><strong>Not:</strong> <strong>restrict</strong> özelliğini "A" olarak ayarladığımız için Directive'i sadece ve sadece attribute'u "deneme-directive" olan HTML element'i çağırmaktadır.</p>
+
+</body>
+</html>

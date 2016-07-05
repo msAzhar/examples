@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<!-- 
+Controller içeren bir module örneğimiz. 
+-->
+<div ng-app="myApp" ng-controller="myCtrl">
+{{ adi + " " + soyadi }}
+</div>
+
+<script>
+var myapp = angular.module("myApp", []);
+myapp.controller("myCtrl", function($scope) {
+    $scope.adi = "Ahmet";
+    $scope.soyadi = "Avcı";
+});
+</script>
+
+</body>
+</html>
+

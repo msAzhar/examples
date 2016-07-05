@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<!-- 
+AngularJS'in ng-repeat Directive'ini içeren bir örneğimiz. 
+Burada dizi kullanıldı.
+-->
+<div ng-app="" ng-init="isimler=['Alper','Sedat','Kerem']">
+  <p> ng-repeat ile yapılan döngü:</p>
+  <ul>
+    <li ng-repeat="x in isimler">
+      {{ x }}
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>

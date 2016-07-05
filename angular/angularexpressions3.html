@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<!-- 
+Sayılar içeren bir expression örneğimiz.
+Yalnız burada ng-bind kullanıldı.
+-->
+<p>Fiyatı 5 TL olan 3 tane bardak aldığımızı varsayalım. </p>
+<div ng-app="" ng-init="sayisi=3;fiyati=5">
+<p>Toplam fiyat: <span ng-bind="sayisi * fiyati"></span> TL olacak.</p>
+</div>
+
+</body>
+</html>
+

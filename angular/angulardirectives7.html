@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="myApp">
+<!-- 
+Yeni bir Directive'i class olarak kullanma örneği.
+-->
+<div class="deneme-directive"></div>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("denemeDirective", function() {
+    return {
+        restrict : "C",
+        template : "<h1>Burası Directive ile çalıştırıldı!</h1>"
+    };
+});
+</script>
+
+<!-- <p><strong>Note:</strong> You must add the value "C" to the restrict property to be able to invoke the directive from a class name.</p> -->
+
+<p><strong>Not:</strong> Directive'i class isminden çağırabilmek için restrict özelliğine "C" değerinin eklenmesi gerekmektedir.</p>
+
+</body>
+</html>

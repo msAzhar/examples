@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="myApp">
+<!-- 
+Yeni bir Directive'i comment olarak kullanma örneği.
+-->
+<!-- directive: deneme-directive -->
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("denemeDirective", function() {
+    return {
+        restrict : "M",
+        replace : true,
+        template : "<h1>Burası Directive ile çalıştırıldı!</h1>"
+    };
+});
+</script>
+
+<p><strong>Not:</strong> Bu örnekte <strong>replace</strong> özelliğini ekledik,eğer onu eklemeseydik comment gözükmez olurdu. </p>
+
+<p><strong>Not:</strong> Directive'i comment'ten çağırabilmek için restrict özelliğine "M" değerinin eklenmesi gerekmektedir.</p>
+
+</body>
+</html>
+

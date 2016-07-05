@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<!-- 
+Expression'ları istediğimiz yere yazabiliriz. 
+Örneğin, AngularJS ile CSS özelliğinin değerini değiştiren bir örnek.
+-->
+<p>Girdiye başka bir renk giriniz(Örn., pink, lightblue, green):</p>
+
+<div ng-app="" ng-init="myCol='yellow'">
+
+<input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
+
+</div>
+
+<p>AngularJS expression'ı çözüyor ve sonucu döndürüyor.</p>
+
+<p>Girdi kutusunun arkaplan rengi girdiğiniz renk'te olacaktır.</p>
+
+</body>
+</html>
+

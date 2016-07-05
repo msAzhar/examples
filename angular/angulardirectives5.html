@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="myApp">
+<!-- 
+Yeni bir Directive'i element olarak kullanma örneği.
+-->
+<deneme-directive></deneme-directive>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("denemeDirective", function() {
+    return {
+        template : "<h1>Burası Directive ile çalıştırıldı!</h1>"
+    };
+});
+</script>
+
+</body>
+</html>

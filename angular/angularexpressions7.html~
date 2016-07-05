@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<!-- 
+Nesneler içeren bir expression örneğimiz.
+Yalnız burada ng-bind kullanıldı.
+-->
+<div ng-app="" ng-init="ogretmen={adi:'Sedat',soyadi:'Akleylek'}">
+
+<p>Öğretmenimin soyadı <span ng-bind="ogretmen.soyadi"></span></p>
+
+</div>
+
+</body>
+</html>
